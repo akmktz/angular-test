@@ -1,0 +1,23 @@
+.main-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: indianred;
+}
+.main-menu li {
+    list-style-type: none;
+    margin: 5px 10px;
+}
+
+.main-menu li a {
+    font-size: larger;
+    color: white;
+    text-decoration: none;
+}
+
+.main-menu li a.active {
+    color: lightgray;
+    pointer-events: none;
+    cursor: default;
+    text-decoration: none;
+}

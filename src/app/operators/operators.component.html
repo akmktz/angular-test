@@ -1,0 +1,11 @@
+<h2>List (for, if, onclick)</h2>
+<div class="container">
+  <ul class="active-list">
+    <li *ngFor="let item of list" (click)="onClick(item)">
+      <strong *ngIf="item.marked">{{item.name}}</strong>
+      <span *ngIf="!item.marked">{{item.name}}</span>
+    </li>
+  </ul>
+</div>
+
+

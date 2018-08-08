@@ -1,0 +1,12 @@
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+
+.data-table {
+    margin: 0 auto;
+    text-align: left;
+    min-width: 400px;
+    max-width: 800px;
+}
+
+th.mat-sort-header-sorted {
+    color: black;
+}

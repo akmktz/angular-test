@@ -1,0 +1,12 @@
+.container {
+    text-align: left;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: rgba(223, 133, 135, 0.44);
+    padding: 10px 15px;
+}
+
+.active-list li {
+    margin: 7px 0;
+    cursor: pointer;
+}
