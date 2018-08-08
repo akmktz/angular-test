@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +7,30 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angtest';
+  list = [
+      {
+        name: 'aaaaa',
+        marked: false,
+      },
+      {
+        name: 'bbbbbbbbb',
+        marked: false,
+      },
+      {
+        name: 'cccccccccccc',
+        marked: false,
+      },
+      {
+        name: 'ddddddddddd',
+        marked: false,
+      }
+  ];
+
+  onClick(item): void {
+      this.list.forEach((itm) => {
+        itm.marked = false;
+      });
+      item.marked = true;
+      console.log(item);
+  }
 }

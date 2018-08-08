@@ -18,3 +18,10 @@
   </li>
 </ul>
 
+<ul>
+  <li *ngFor="let item of list" (click)="onClick(item)">
+    <strong *ngIf="item.marked">{{item.name}}</strong>
+    <span *ngIf="!item.marked">{{item.name}}</span>
+  </li>
+</ul>
+
