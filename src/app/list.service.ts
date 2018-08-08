@@ -11,4 +11,8 @@ export class ListService {
     getList() {
         return this.http.get('json/list.json');
     }
+
+    getItem(id: number) {
+        return this.http.get('json/' + id + '.json');
+    }
 }

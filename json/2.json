@@ -1,11 +1,9 @@
 {
   "success": true,
-  "item": [
-    {
-      "id": 2,
-      "name": "Jaden",
-      "age": 25,
-      "gender": "female"
-    }
-  ]
+  "item": {
+    "id": 2,
+    "name": "Jaden",
+    "age": 25,
+    "gender": "female"
+  }
 }
