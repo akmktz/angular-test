@@ -4,7 +4,8 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 import {RouterModule, Routes} from '@angular/router';
 import {HttpClientModule} from '@angular/common/http';
-import {MatButtonModule, MatIconModule, MatSortModule, MatTableModule} from '@angular/material';
+import {FormsModule} from '@angular/forms';
+import {MatButtonModule, MatCardModule, MatIconModule, MatInputModule, MatSortModule, MatTableModule} from '@angular/material';
 
 import {AppComponent} from './app.component';
 import {Page404Component} from './page404/page404.component';
@@ -24,26 +25,29 @@ const appRoutes: Routes = [
 ];
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    Page404Component,
-    HomeComponent,
-    AboutComponent,
-    OperatorsComponent,
-    TableComponent,
-    TableItemComponent,
-  ],
-  imports: [
-    BrowserModule,
-    BrowserAnimationsModule,
-    RouterModule.forRoot(appRoutes),
-    HttpClientModule,
-    MatTableModule,
-    MatSortModule,
-    MatButtonModule,
-    MatIconModule,
-  ],
-  bootstrap: [AppComponent]
+    declarations: [
+        AppComponent,
+        Page404Component,
+        HomeComponent,
+        AboutComponent,
+        OperatorsComponent,
+        TableComponent,
+        TableItemComponent,
+    ],
+    imports: [
+        BrowserModule,
+        BrowserAnimationsModule,
+        RouterModule.forRoot(appRoutes),
+        HttpClientModule,
+        MatTableModule,
+        MatSortModule,
+        MatButtonModule,
+        MatIconModule,
+        MatCardModule,
+        MatInputModule,
+        FormsModule,
+    ],
+    bootstrap: [AppComponent]
 })
 
 export class AppModule { }

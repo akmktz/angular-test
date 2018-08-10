@@ -10,7 +10,7 @@ import {AjaxItem} from '../../ajax-item';
 })
 export class TableItemComponent implements OnInit {
   id: number;
-  item: object;
+  item: object = {};
 
   constructor(private router: Router, private route: ActivatedRoute, private listService: ListService) { }
 
