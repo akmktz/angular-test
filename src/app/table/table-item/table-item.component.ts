@@ -17,11 +17,9 @@ export class TableItemComponent implements OnInit {
   ngOnInit() {
     this.route.params.subscribe(params => {
       this.id = +params['id'];
-      console.log(this.id);
 
       this.listService.getItem(this.id).subscribe((data: AjaxItem) => {
         this.item = data.item;
-        console.log(this.item);
       });
     });
   }
